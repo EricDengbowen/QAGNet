@@ -1,10 +1,6 @@
 # QAGNet
-This is the official repository for the anonymously submitted paper **Advancing Saliency Ranking with Human Fixations:
+This is the official repository for the CVPR 2024 paper **Advancing Saliency Ranking with Human Fixations:
 Dataset, Models and Benchmarks.**
-
-> [!NOTE]
-> This is an anonymous repository for the double-blind review process of CVPR 2024, there is no identifiable author or affiliation information.
-
 
 To do:
 
