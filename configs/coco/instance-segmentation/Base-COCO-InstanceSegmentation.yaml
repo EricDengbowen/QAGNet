@@ -1,0 +1,59 @@
+MODEL:
+  BACKBONE:
+    FREEZE_AT: 0
+    NAME: "build_resnet_backbone"
+  WEIGHTS: "./res50.pkl"
+  PIXEL_MEAN: [123.675, 116.280, 103.530]
+  PIXEL_STD: [58.395, 57.120, 57.375]
+  RESNETS:
+    DEPTH: 50
+    STEM_TYPE: "basic"  # not used
+    STEM_OUT_CHANNELS: 64
+    STRIDE_IN_1X1: False
+    OUT_FEATURES: ["res2", "res3", "res4", "res5"]
+    # NORM: "SyncBN"
+    RES5_MULTI_GRID: [1, 1, 1]  # not used
+DATASETS:
+  TRAIN: ("sifr_train",)   #TRAIN: ("irsr_train,"assr_train","sifr_train")
+  TEST: ("sifr_test",)
+SOLVER:
+  IMS_PER_BATCH: 4
+  BASE_LR: 2.5e-5
+  STEPS: (11472, 14340)
+  MAX_ITER: 28680
+  WARMUP_FACTOR: 1.0
+  WARMUP_ITERS: 10
+  WEIGHT_DECAY: 0.0001
+  OPTIMIZER: "ADAMW"
+  BACKBONE_MULTIPLIER: 0.1
+  CHECKPOINT_PERIOD: 2000
+  CLIP_GRADIENTS:
+    ENABLED: True
+    CLIP_TYPE: "full_model"
+    CLIP_VALUE: 0.01
+    NORM_TYPE: 2.0
+  AMP:
+    ENABLED: True
+INPUT:
+  IMAGE_SIZE: 1024
+  MIN_SCALE: 0.1
+  MAX_SCALE: 2.0
+  FORMAT: "RGB"
+  DATASET_MAPPER_NAME: "sifr_sor"   #"irsr_sor" “sifr_sor” "assr_sor"
+TEST:
+  DETECTIONS_PER_IMAGE: 100
+DATALOADER:
+  FILTER_EMPTY_ANNOTATIONS: True
+  NUM_WORKERS: 6
+VERSION: 2
+OUTPUT_DIR: "./output/QAGNet_trainRes50/"
+EVALUATION:
+  DATAPATH: '/db/psxbd1/Mask2Former/datasets/'
+  DATASET: "sifr"
+  MODEL_DIR: "./PreTrained_Models/"
+  MODEL_NAMES: ('SIFR_ResNet50.pth',)
+  RESULT_THRESHOLD: 0.7
+  DATASETMODE: "test"
+  LIMITED: False   #Limited Version Evaluation or Unlimited Version Evaluation
+
+

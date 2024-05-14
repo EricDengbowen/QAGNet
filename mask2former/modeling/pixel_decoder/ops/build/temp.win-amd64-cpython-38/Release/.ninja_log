@@ -1,0 +1,4 @@
+# ninja log v5
+6	2728	7004271404137138	D:/Projects/Mask2Former/mask2former/modeling/pixel_decoder/ops/build/temp.win-amd64-cpython-38/Release/Projects/Mask2Former/mask2former/modeling/pixel_decoder/ops/src/cpu/ms_deform_attn_cpu.obj	cc82fe35413f08ad
+17	8378	7004271460605759	D:/Projects/Mask2Former/mask2former/modeling/pixel_decoder/ops/build/temp.win-amd64-cpython-38/Release/Projects/Mask2Former/mask2former/modeling/pixel_decoder/ops/src/vision.obj	7fc11c3023f0f962
+13	12536	7004271502075884	D:/Projects/Mask2Former/mask2former/modeling/pixel_decoder/ops/build/temp.win-amd64-cpython-38/Release/Projects/Mask2Former/mask2former/modeling/pixel_decoder/ops/src/cuda/ms_deform_attn_cuda.obj	1886349a4575a72a
