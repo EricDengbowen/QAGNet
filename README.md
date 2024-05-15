@@ -44,6 +44,19 @@ We opensource all SRD models' [predicted saliency ranking maps](https://drive.go
 
 ![Example Image](images/visualcomparison.jpg)
 
+## FAQ
+
+**1. ImportError: /lib64/libstdc++.so.6: version `CXXABI_1.3.9' not found**
+
+  Check if you can load cuda-11.1/cudnn-v8.1.1.33/gcc-10.2.0
+
+**2. LooseVersion = distutils.version.LooseVersionAttributeError: module 'distutils' has no attribute 'version'**
+
+  Please install setuptools 59.5.0
+```
+pip install setuptools==59.5.0
+```
+
 ## Citing SIFR Dataset and QAGNet
 
 If you find the SIFR dataset or QAGNet beneficial for your work, please consider citing our research:
