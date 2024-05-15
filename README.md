@@ -1,4 +1,4 @@
-# QAGNet
+# SIFR Dataset and QAGNet
 This is the official repository for the CVPR 2024 paper **Advancing Saliency Ranking with Human Fixations:
 Dataset, Models and Benchmarks.**
 
