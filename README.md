@@ -34,6 +34,7 @@ Our proposed QAGNet is based on [Mask2Former](https://github.com/facebookresearc
 
 ### Testing QAGNet
 - Download our [pretrained models](https://drive.google.com/file/d/1OlMN-0QKyOK9BMzjCRNnqhcG89r0uDWY/view?usp=sharing) for Res50, Swin-B and Swin-L.
+- Configure the pretrained weights path in corresponding yaml files.
 - Configure the evaluation settings in Base-COCO-InstanceSegmentation.yaml.
 - Configure and run plain-test.py.
 
