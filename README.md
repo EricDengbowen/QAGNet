@@ -60,10 +60,15 @@ pip install setuptools==59.5.0
 ## Citing SIFR Dataset and QAGNet
 
 If you find the SIFR dataset or QAGNet beneficial for your work, please consider citing our research:
-
-To do.
-
-
+```bibtex
+@inproceedings{deng2024advancing,
+  title={Advancing Saliency Ranking with Human Fixations: Dataset Models and Benchmarks},
+  author={Deng, Bowen and Song, Siyang and French, Andrew P and Schluppeck, Denis and Pound, Michael P},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={28348--28357},
+  year={2024}
+}
+```
 
 
 
