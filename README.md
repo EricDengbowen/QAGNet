@@ -1,6 +1,6 @@
 # SIFR Dataset and QAGNet
 This is the official repository for the CVPR 2024 paper **Advancing Saliency Ranking with Human Fixations:
-Dataset, Models and Benchmarks.**
+Dataset, Models and Benchmarks.** [[Paper Link](https://openaccess.thecvf.com/content/CVPR2024/papers/Deng_Advancing_Saliency_Ranking_with_Human_Fixations_Dataset_Models_and_Benchmarks_CVPR_2024_paper.pdf)]
 
 ## SIFR Dataset - From Mouse-Trajectories to Real Human Gaze
 
